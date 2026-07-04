@@ -1,0 +1,179 @@
+/* ============================================================
+   Project Archon — Contact Page CSS
+   Contact form, office locations, map placeholder
+   ============================================================ */
+
+/* ── Contact Hero ────────────────────────────────────────── */
+.contact-hero {
+  padding-block: var(--space-16) var(--space-8);
+  text-align: center;
+}
+
+.contact-title {
+  font-size: clamp(var(--text-3xl), 5vw, var(--text-5xl));
+  font-weight: var(--fw-extrabold);
+  margin-bottom: var(--space-4);
+}
+
+.contact-subtitle {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+/* ── Contact Layout ──────────────────────────────────────── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: flex-start;
+  margin-bottom: var(--space-20);
+}
+
+/* ── Contact Form ────────────────────────────────────────── */
+.contact-form-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-xl);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.contact-form .btn {
+  margin-top: var(--space-4);
+}
+
+/* ── Contact Info & Offices ──────────────────────────────── */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.info-block h3 {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-4);
+}
+
+.offices-grid {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.office-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: var(--space-5);
+  display: flex;
+  gap: var(--space-4);
+  transition: all var(--transition-base);
+}
+
+.office-card:hover {
+  background: var(--card-bg-hover);
+  border-color: rgba(0,230,118,0.3);
+}
+
+.office-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-lg);
+  background: var(--primary-glow);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.office-details h4 {
+  font-size: var(--text-base);
+  margin-bottom: var(--space-1);
+}
+
+.office-details p {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: var(--lh-relaxed);
+}
+
+/* ── Map Placeholder ─────────────────────────────────────── */
+.map-placeholder {
+  width: 100%;
+  height: 300px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* CSS dot grid pattern for map placeholder */
+.map-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.map-marker {
+  width: 24px;
+  height: 24px;
+  background: var(--primary);
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  position: relative;
+  animation: float 2s infinite ease-in-out;
+}
+
+.map-marker::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-full);
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.map-label {
+  position: absolute;
+  bottom: var(--space-6);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

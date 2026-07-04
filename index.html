@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archon | Premium Trading Platform</title>
+  <meta name="description" content="A modern, premium trading platform built with semantic HTML5 and CSS3.">
+  
+  <!-- FontAwesome for icons (using a CDN for placeholder icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- ================= Ticker Bar ================= -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <!-- Duplicate items to create infinite loop effect -->
+      <div class="ticker__item"><span class="ticker__symbol">BTC/USD</span> <span class="ticker__price">64,230.50</span> <span class="ticker__change ticker__up">+2.4%</span></div>
+      <div class="ticker__item"><span class="ticker__symbol">ETH/USD</span> <span class="ticker__price">3,450.20</span> <span class="ticker__change ticker__up">+1.8%</span></div>
+      <div class="ticker__item"><span class="ticker__symbol">SOL/USD</span> <span class="ticker__price">142.75</span> <span class="ticker__change ticker__down">-0.5%</span></div>
+      <div class="ticker__item"><span class="ticker__symbol">EUR/USD</span> <span class="ticker__price">1.0845</span> <span class="ticker__change ticker__up">+0.1%</span></div>
+      <div class="ticker__item"><span class="ticker__symbol">GOLD</span> <span class="ticker__price">2,345.10</span> <span class="ticker__change ticker__up">+0.8%</span></div>
+      <div class="ticker__item"><span class="ticker__symbol">AAPL</span> <span class="ticker__price">175.40</span> <span class="ticker__change ticker__down">-1.2%</span></div>
+      <div class="ticker__item"><span class="ticker__symbol">TSLA</span> <span class="ticker__price">180.20</span> <span class="ticker__change ticker__up">+3.5%</span></div>
+      
+      <div class="ticker__item"><span class="ticker__symbol">BTC/USD</span> <span class="ticker__price">64,230.50</span> <span class="ticker__change ticker__up">+2.4%</span></div>
+      <div class="ticker__item"><span class="ticker__symbol">ETH/USD</span> <span class="ticker__price">3,450.20</span> <span class="ticker__change ticker__up">+1.8%</span></div>
+      <div class="ticker__item"><span class="ticker__symbol">SOL/USD</span> <span class="ticker__price">142.75</span> <span class="ticker__change ticker__down">-0.5%</span></div>
+      <div class="ticker__item"><span class="ticker__symbol">EUR/USD</span> <span class="ticker__price">1.0845</span> <span class="ticker__change ticker__up">+0.1%</span></div>
+      <div class="ticker__item"><span class="ticker__symbol">GOLD</span> <span class="ticker__price">2,345.10</span> <span class="ticker__change ticker__up">+0.8%</span></div>
+      <div class="ticker__item"><span class="ticker__symbol">AAPL</span> <span class="ticker__price">175.40</span> <span class="ticker__change ticker__down">-1.2%</span></div>
+      <div class="ticker__item"><span class="ticker__symbol">TSLA</span> <span class="ticker__price">180.20</span> <span class="ticker__change ticker__up">+3.5%</span></div>
+    </div>
+  </div>
+
+  <!-- ================= Navigation ================= -->
+  <header class="nav">
+    <input type="checkbox" id="nav-toggle" class="sr-only">
+    
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <div class="nav__logo-icon">A</div>
+        <div class="nav__logo-text">Archon</div>
+      </a>
+
+      <nav class="nav__links">
+        <a href="index.html" class="nav__link active">Home</a>
+        <a href="markets.html" class="nav__link">Markets</a>
+        <a href="dashboard.html" class="nav__link">Dashboard</a>
+        <a href="pricing.html" class="nav__link">Pricing</a>
+        <a href="academy.html" class="nav__link">Academy</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn-ghost hide-mobile">Log In</a>
+        <a href="register.html" class="btn btn-primary hide-mobile">Sign Up</a>
+        
+        <label for="nav-toggle" class="nav__hamburger">
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="nav__mobile-menu">
+      <a href="index.html" class="nav__mobile-link active"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="markets.html" class="nav__mobile-link"><i class="fa-solid fa-chart-line"></i> Markets</a>
+      <a href="dashboard.html" class="nav__mobile-link"><i class="fa-solid fa-table-columns"></i> Dashboard</a>
+      <a href="pricing.html" class="nav__mobile-link"><i class="fa-solid fa-tag"></i> Pricing</a>
+      <a href="academy.html" class="nav__mobile-link"><i class="fa-solid fa-graduation-cap"></i> Academy</a>
+      <a href="about.html" class="nav__mobile-link"><i class="fa-solid fa-circle-info"></i> About</a>
+      <a href="contact.html" class="nav__mobile-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+      
+      <div class="nav__mobile-actions">
+        <a href="login.html" class="btn btn-ghost btn-full">Log In</a>
+        <a href="register.html" class="btn btn-primary btn-full">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= Hero Section ================= -->
+  <main>
+    <section class="hero container">
+      <div class="hero__grid">
+        
+        <!-- Hero Content -->
+        <div class="hero__content">
+          <div class="hero__label"><span class="glow-dot"></span> Next-Gen Trading</div>
+          <h1 class="hero__title">
+            Trade the Future <br>
+            <span class="hero__title-gradient">Without Limits</span>
+          </h1>
+          <p class="hero__subtitle">
+            Experience lightning-fast execution, institutional-grade security, and advanced charting tools all in one beautiful platform. Trade Crypto, Forex, and Stocks seamlessly.
+          </p>
+          <div class="hero__actions">
+            <a href="register.html" class="btn btn-primary btn-xl">Start Trading Now <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="about.html" class="btn btn-outline btn-xl">Explore Features</a>
+          </div>
+          
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-value">$50B+</span>
+              <span class="hero__stat-label">Quarterly Volume</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-value">2M+</span>
+              <span class="hero__stat-label">Active Users</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-value">0.01s</span>
+              <span class="hero__stat-label">Execution Time</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual (CSS Chart Illustration) -->
+        <div class="hero__visual">
+          
+          <!-- Floating elements -->
+          <div class="hero__float-card hero__float-card--tl">
+            <div class="hero__float-label">Total Profit</div>
+            <div class="hero__float-value text-primary">+$12,450.00</div>
+            <div class="hero__float-badge"><i class="fa-solid fa-arrow-trend-up"></i> 14.5%</div>
+          </div>
+          
+          <div class="hero__float-card hero__float-card--br">
+            <div class="hero__float-label">Active Trades</div>
+            <div class="hero__float-value">8 Open</div>
+          </div>
+
+          <!-- Main Chart Card -->
+          <div class="hero__chart-card gradient-border">
+            <div class="hero__chart-header">
+              <div class="hero__chart-pair">
+                <div class="hero__chart-icon"><i class="fa-brands fa-bitcoin"></i></div>
+                <div>
+                  <div class="hero__chart-name">BTC / USD</div>
+                  <div class="hero__chart-sub">Bitcoin</div>
+                </div>
+              </div>
+              <div class="hero__chart-price">
+                <div class="hero__chart-val">64,230.50</div>
+                <div class="hero__chart-change">+2.45%</div>
+              </div>
+            </div>
+            
+            <!-- CSS Candlesticks -->
+            <div class="hero__candles">
+              <div class="candle up" style="height: 40px;"><div class="candle__wick" style="height: 100%;"></div><div class="candle__body" style="height: 60%; position:absolute; bottom: 20%;"></div></div>
+              <div class="candle down" style="height: 60px;"><div class="candle__wick" style="height: 100%;"></div><div class="candle__body" style="height: 80%; position:absolute; bottom: 10%;"></div></div>
+              <div class="candle up" style="height: 70px;"><div class="candle__wick" style="height: 100%;"></div><div class="candle__body" style="height: 50%; position:absolute; bottom: 40%;"></div></div>
+              <div class="candle up" style="height: 90px;"><div class="candle__wick" style="height: 100%;"></div><div class="candle__body" style="height: 70%; position:absolute; bottom: 20%;"></div></div>
+              <div class="candle down" style="height: 50px;"><div class="candle__wick" style="height: 100%;"></div><div class="candle__body" style="height: 40%; position:absolute; bottom: 10%;"></div></div>
+              <div class="candle up" style="height: 110px;"><div class="candle__wick" style="height: 100%;"></div><div class="candle__body" style="height: 60%; position:absolute; bottom: 30%;"></div></div>
+              <div class="candle up" style="height: 130px;"><div class="candle__wick" style="height: 100%;"></div><div class="candle__body" style="height: 80%; position:absolute; bottom: 20%;"></div></div>
+              <div class="candle down" style="height: 80px;"><div class="candle__wick" style="height: 100%;"></div><div class="candle__body" style="height: 70%; position:absolute; bottom: 15%;"></div></div>
+              <div class="candle up" style="height: 140px;"><div class="candle__wick" style="height: 100%;"></div><div class="candle__body" style="height: 60%; position:absolute; bottom: 30%;"></div></div>
+              <div class="candle up" style="height: 160px;"><div class="candle__wick" style="height: 100%;"></div><div class="candle__body" style="height: 50%; position:absolute; bottom: 45%;"></div></div>
+            </div>
+
+            <div class="flex justify-between mt-4">
+              <button class="btn btn-success btn-sm btn-full mr-2" style="background:var(--grad-primary); color:#fff; border-radius: var(--radius-md); padding: 0.5rem;">Buy BTC</button>
+              <button class="btn btn-danger btn-sm btn-full ml-2" style="background:var(--grad-danger); color:#fff; border-radius: var(--radius-md); padding: 0.5rem;">Sell BTC</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= Live Markets Section ================= -->
+    <section class="section container">
+      <div class="section-header">
+        <h2 class="section-title">Trending <span>Markets</span></h2>
+        <p class="section-subtitle">Real-time prices of the most popular assets traded on Archon.</p>
+      </div>
+      
+      <div class="market-cards">
+        <!-- Market Card 1 -->
+        <div class="mcard">
+          <div class="mcard__header">
+            <div class="mcard__coin">
+              <div class="mcard__icon mcard__icon--btc"><i class="fa-brands fa-bitcoin"></i></div>
+              <div>
+                <div class="mcard__name">Bitcoin</div>
+                <div class="mcard__ticker">BTC</div>
+              </div>
+            </div>
+            <div class="badge badge-up">+2.45%</div>
+          </div>
+          <div class="mcard__price">$64,230.50</div>
+          <div class="mcard__footer">
+            <div class="mcard__vol">Vol: $32.4B</div>
+            <div class="sparkline">
+              <div class="sparkline-bar up" style="height: 20%"></div>
+              <div class="sparkline-bar up" style="height: 40%"></div>
+              <div class="sparkline-bar up" style="height: 30%"></div>
+              <div class="sparkline-bar up" style="height: 60%"></div>
+              <div class="sparkline-bar up" style="height: 50%"></div>
+              <div class="sparkline-bar up" style="height: 80%"></div>
+              <div class="sparkline-bar up" style="height: 100%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Market Card 2 -->
+        <div class="mcard">
+          <div class="mcard__header">
+            <div class="mcard__coin">
+              <div class="mcard__icon mcard__icon--eth"><i class="fa-brands fa-ethereum"></i></div>
+              <div>
+                <div class="mcard__name">Ethereum</div>
+                <div class="mcard__ticker">ETH</div>
+              </div>
+            </div>
+            <div class="badge badge-up">+1.82%</div>
+          </div>
+          <div class="mcard__price">$3,450.20</div>
+          <div class="mcard__footer">
+            <div class="mcard__vol">Vol: $18.2B</div>
+            <div class="sparkline">
+              <div class="sparkline-bar up" style="height: 30%"></div>
+              <div class="sparkline-bar up" style="height: 20%"></div>
+              <div class="sparkline-bar up" style="height: 50%"></div>
+              <div class="sparkline-bar up" style="height: 40%"></div>
+              <div class="sparkline-bar up" style="height: 70%"></div>
+              <div class="sparkline-bar up" style="height: 60%"></div>
+              <div class="sparkline-bar up" style="height: 90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Market Card 3 -->
+        <div class="mcard">
+          <div class="mcard__header">
+            <div class="mcard__coin">
+              <div class="mcard__icon mcard__icon--sol">S</div>
+              <div>
+                <div class="mcard__name">Solana</div>
+                <div class="mcard__ticker">SOL</div>
+              </div>
+            </div>
+            <div class="badge badge-down">-0.54%</div>
+          </div>
+          <div class="mcard__price">$142.75</div>
+          <div class="mcard__footer">
+            <div class="mcard__vol">Vol: $4.1B</div>
+            <div class="sparkline">
+              <div class="sparkline-bar down" style="height: 80%"></div>
+              <div class="sparkline-bar down" style="height: 90%"></div>
+              <div class="sparkline-bar down" style="height: 60%"></div>
+              <div class="sparkline-bar down" style="height: 70%"></div>
+              <div class="sparkline-bar down" style="height: 40%"></div>
+              <div class="sparkline-bar down" style="height: 50%"></div>
+              <div class="sparkline-bar down" style="height: 30%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Market Card 4 -->
+        <div class="mcard">
+          <div class="mcard__header">
+            <div class="mcard__coin">
+              <div class="mcard__icon mcard__icon--bnb">B</div>
+              <div>
+                <div class="mcard__name">Binance Coin</div>
+                <div class="mcard__ticker">BNB</div>
+              </div>
+            </div>
+            <div class="badge badge-up">+0.95%</div>
+          </div>
+          <div class="mcard__price">$590.10</div>
+          <div class="mcard__footer">
+            <div class="mcard__vol">Vol: $1.2B</div>
+            <div class="sparkline">
+              <div class="sparkline-bar up" style="height: 40%"></div>
+              <div class="sparkline-bar up" style="height: 50%"></div>
+              <div class="sparkline-bar up" style="height: 40%"></div>
+              <div class="sparkline-bar up" style="height: 60%"></div>
+              <div class="sparkline-bar up" style="height: 70%"></div>
+              <div class="sparkline-bar up" style="height: 65%"></div>
+              <div class="sparkline-bar up" style="height: 80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: var(--space-8);">
+        <a href="markets.html" class="btn btn-outline">View All Markets <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <!-- ================= Why Choose Us ================= -->
+    <section class="section container">
+      <div class="section-header">
+        <div class="section-label">Archon Edge</div>
+        <h2 class="section-title">Built for <span>Performance</span></h2>
+        <p class="section-subtitle">We combine cutting-edge technology with intuitive design to give you the ultimate trading advantage.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-card__icon icon-frame icon-frame-primary"><i class="fa-solid fa-bolt"></i></div>
+          <h3 class="why-card__title">Lightning Execution</h3>
+          <p class="why-card__text">Our matching engine processes millions of orders per second, ensuring you get the exact price you want without slippage.</p>
+        </div>
+        
+        <div class="why-card">
+          <div class="why-card__icon icon-frame icon-frame-secondary"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="why-card__title">Bank-Grade Security</h3>
+          <p class="why-card__text">Your funds are protected with cold storage, multi-sig wallets, and regular third-party security audits.</p>
+        </div>
+        
+        <div class="why-card">
+          <div class="why-card__icon icon-frame icon-frame-danger"><i class="fa-solid fa-chart-pie"></i></div>
+          <h3 class="why-card__title">Deep Liquidity</h3>
+          <p class="why-card__text">Access deep liquidity pools aggregated from top providers to trade large volumes with minimal market impact.</p>
+        </div>
+        
+        <div class="why-card">
+          <div class="why-card__icon icon-frame icon-frame-warning"><i class="fa-solid fa-headset"></i></div>
+          <h3 class="why-card__title">24/7 Premium Support</h3>
+          <p class="why-card__text">Our dedicated team of trading experts is available around the clock to assist you via live chat, email, or phone.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Trading Features Section ================= -->
+    <section class="section container">
+      <div class="features__grid">
+        
+        <!-- Features Visual -->
+        <div class="features__visual">
+          <div class="chart-panel">
+            <div class="chart-panel__header">
+              <div class="chart-panel__title">Portfolio Performance</div>
+              <div class="chart-panel__tabs">
+                <span class="chart-panel__tab">1D</span>
+                <span class="chart-panel__tab">1W</span>
+                <span class="chart-panel__tab active">1M</span>
+                <span class="chart-panel__tab">1Y</span>
+              </div>
+            </div>
+            <div class="text-3xl fw-bold font-mono mb-4">$124,560.80 <span class="text-sm text-primary">+12.4%</span></div>
+            <!-- CSS Area Chart -->
+            <div class="area-chart">
+              <div class="area-chart__bar" style="height: 20%"></div>
+              <div class="area-chart__bar" style="height: 25%"></div>
+              <div class="area-chart__bar" style="height: 22%"></div>
+              <div class="area-chart__bar" style="height: 35%"></div>
+              <div class="area-chart__bar" style="height: 30%"></div>
+              <div class="area-chart__bar" style="height: 45%"></div>
+              <div class="area-chart__bar" style="height: 50%"></div>
+              <div class="area-chart__bar" style="height: 48%"></div>
+              <div class="area-chart__bar" style="height: 60%"></div>
+              <div class="area-chart__bar" style="height: 55%"></div>
+              <div class="area-chart__bar" style="height: 70%"></div>
+              <div class="area-chart__bar" style="height: 75%"></div>
+              <div class="area-chart__bar" style="height: 85%"></div>
+              <div class="area-chart__bar" style="height: 80%"></div>
+              <div class="area-chart__bar" style="height: 95%"></div>
+              <div class="area-chart__bar" style="height: 100%"></div>
+            </div>
+          </div>
+          
+          <div class="grid grid-2 gap-4 mt-2">
+            <div class="card p-4 flex items-center gap-4">
+              <div class="icon-frame icon-frame-primary"><i class="fa-solid fa-wallet"></i></div>
+              <div>
+                <div class="text-xs text-muted uppercase">Fiat Balance</div>
+                <div class="text-lg fw-bold font-mono">$45,200</div>
+              </div>
+            </div>
+            <div class="card p-4 flex items-center gap-4">
+              <div class="icon-frame icon-frame-secondary"><i class="fa-solid fa-coins"></i></div>
+              <div>
+                <div class="text-xs text-muted uppercase">Crypto Value</div>
+                <div class="text-lg fw-bold font-mono">$79,360</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Features List -->
+        <div>
+          <h2 class="text-4xl fw-extrabold mb-6">Advanced Tools for <br><span class="gradient-text-blue">Serious Traders</span></h2>
+          <p class="text-secondary mb-8">Access professional-grade tools designed to help you analyze markets, manage risk, and execute strategies with precision.</p>
+          
+          <div class="features__list">
+            <div class="feature-item">
+              <div class="icon-frame icon-frame-primary"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="feature-item__content">
+                <h3 class="feature-item__title">Pro Charting</h3>
+                <p class="feature-item__text">100+ technical indicators, multiple chart types, and drawing tools to perform deep technical analysis.</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="icon-frame icon-frame-secondary"><i class="fa-solid fa-robot"></i></div>
+              <div class="feature-item__content">
+                <h3 class="feature-item__title">Algorithmic Trading</h3>
+                <p class="feature-item__text">Automate your strategies with our powerful API or use our visual drag-and-drop bot builder.</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="icon-frame icon-frame-warning"><i class="fa-solid fa-layer-group"></i></div>
+              <div class="feature-item__content">
+                <h3 class="feature-item__title">Advanced Order Types</h3>
+                <p class="feature-item__text">Take control with Limit, Stop-Loss, OCO, Trailing Stops, and Iceberg orders to manage risk effectively.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= Statistics Section ================= -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-item__value">150+</div>
+            <div class="stat-item__label">Supported Countries</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__value">350+</div>
+            <div class="stat-item__label">Tradable Assets</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__value">99.9%</div>
+            <div class="stat-item__label">Uptime SLA</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__value">$0</div>
+            <div class="stat-item__label">Deposit Fees</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Steps Section ================= -->
+    <section class="section container">
+      <div class="section-header">
+        <h2 class="section-title">Start Trading in <span>Minutes</span></h2>
+        <p class="section-subtitle">Our streamlined onboarding process gets you into the markets faster than ever.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-item__number"><i class="fa-solid fa-user-plus"></i></div>
+          <h3 class="step-item__title">1. Create Account</h3>
+          <p class="step-item__text">Sign up with your email and complete our quick verification process to secure your account.</p>
+        </div>
+        
+        <div class="step-item">
+          <div class="step-item__number"><i class="fa-solid fa-building-columns"></i></div>
+          <h3 class="step-item__title">2. Fund Wallet</h3>
+          <p class="step-item__text">Deposit fiat via bank transfer or credit card, or transfer crypto from another wallet instantly.</p>
+        </div>
+        
+        <div class="step-item">
+          <div class="step-item__number"><i class="fa-solid fa-chart-pie"></i></div>
+          <h3 class="step-item__title">3. Start Trading</h3>
+          <p class="step-item__text">Access hundreds of markets and execute your first trade using our intuitive interface.</p>
+        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: var(--space-12);">
+        <a href="register.html" class="btn btn-primary btn-lg">Open Free Account</a>
+      </div>
+    </section>
+
+    <!-- ================= Testimonials ================= -->
+    <section class="section container">
+      <div class="section-header">
+        <h2 class="section-title">Trusted by <span>Professionals</span></h2>
+        <p class="section-subtitle">See what our community of active traders has to say about the Archon platform.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="tcard">
+          <div class="tcard__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="tcard__text">"The execution speed on Archon is unmatched. I've completely migrated my high-frequency trading bots here. The API is rock solid and documentation is excellent."</p>
+          <div class="tcard__author">
+            <div class="tcard__avatar avatar--a">M</div>
+            <div>
+              <div class="tcard__name">Michael Chen</div>
+              <div class="tcard__role">Algorithmic Trader</div>
+            </div>
+            <div class="tcard__return">+34% YTD</div>
+          </div>
+        </div>
+        
+        <div class="tcard">
+          <div class="tcard__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="tcard__text">"As a swing trader, the charting tools are critical. Archon provides TradingView integration natively, plus unique order types that help me manage risk while I sleep."</p>
+          <div class="tcard__author">
+            <div class="tcard__avatar avatar--b">S</div>
+            <div>
+              <div class="tcard__name">Sarah Jenkins</div>
+              <div class="tcard__role">Swing Trader</div>
+            </div>
+            <div class="tcard__return">+18% YTD</div>
+          </div>
+        </div>
+        
+        <div class="tcard">
+          <div class="tcard__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="tcard__text">"The interface is gorgeous and intuitive. Being able to trade crypto, forex, and tech stocks all from a single dashboard has simplified my workflow immensely."</p>
+          <div class="tcard__author">
+            <div class="tcard__avatar avatar--c">D</div>
+            <div>
+              <div class="tcard__name">David Rossi</div>
+              <div class="tcard__role">Portfolio Manager</div>
+            </div>
+            <div class="tcard__return">+22% YTD</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ (CSS Accordion) ================= -->
+    <section class="section container">
+      <div class="section-header">
+        <h2 class="section-title">Common <span>Questions</span></h2>
+      </div>
+
+      <div class="faq-list">
+        
+        <div class="faq-item">
+          <input type="checkbox" id="faq1" name="faq">
+          <label class="faq-item__label" for="faq1">
+            What are the trading fees?
+            <div class="faq-item__icon"><i class="fa-solid fa-plus"></i></div>
+          </label>
+          <div class="faq-item__content">
+            <div class="faq-item__text">
+              Our fee structure is tiered based on your 30-day trading volume. Base fees start at 0.1% for makers and 0.2% for takers. High-volume traders can reach fees as low as 0.02%. Pro and Premium members receive additional fee discounts.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <input type="checkbox" id="faq2" name="faq">
+          <label class="faq-item__label" for="faq2">
+            Is my fiat and crypto secure?
+            <div class="faq-item__icon"><i class="fa-solid fa-plus"></i></div>
+          </label>
+          <div class="faq-item__content">
+            <div class="faq-item__text">
+              Yes. 98% of all crypto assets are stored in geographically distributed cold storage wallets. Fiat deposits are held in dedicated custodial bank accounts. We employ strict access controls, hardware security keys, and regular security audits.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <input type="checkbox" id="faq3" name="faq">
+          <label class="faq-item__label" for="faq3">
+            Can I trade with leverage?
+            <div class="faq-item__icon"><i class="fa-solid fa-plus"></i></div>
+          </label>
+          <div class="faq-item__content">
+            <div class="faq-item__text">
+              Yes, margin trading is available for verified users in supported jurisdictions. We offer up to 10x leverage on spot margin pairs and up to 100x leverage on perpetual futures contracts.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <input type="checkbox" id="faq4" name="faq">
+          <label class="faq-item__label" for="faq4">
+            How quickly are withdrawals processed?
+            <div class="faq-item__icon"><i class="fa-solid fa-plus"></i></div>
+          </label>
+          <div class="faq-item__content">
+            <div class="faq-item__text">
+              Crypto withdrawals are processed instantly and broadcast to the network. Fiat withdrawals via wire transfer typically take 1-3 business days depending on your bank and location. Instant card withdrawals are available in select regions.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= Newsletter ================= -->
+    <section class="newsletter-section section">
+      <div class="container newsletter-inner">
+        <div>
+          <h2 class="newsletter__title">Stay Ahead of the Market</h2>
+          <p class="newsletter__subtitle">Join 100,000+ traders receiving our weekly market analysis and platform updates.</p>
+        </div>
+        <div class="newsletter-form">
+          <div class="newsletter-form__row">
+            <input type="email" class="newsletter-form__input" placeholder="Enter your email address...">
+            <button class="btn btn-primary btn-lg">Subscribe</button>
+          </div>
+          <p class="newsletter-form__note">No spam, ever. Unsubscribe at any time.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        
+        <div class="footer__brand">
+          <a href="index.html" class="footer__brand-logo">
+            <div class="footer__brand-icon">A</div>
+            <div class="footer__brand-name">Archon</div>
+          </a>
+          <p class="footer__brand-tagline">The premium trading platform built for serious investors and traders globally.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="footer__social-link"><i class="fa-brands fa-discord"></i></a>
+            <a href="#" class="footer__social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="footer__social-link"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer__col-title">Platform</h4>
+          <div class="footer__links">
+            <a href="markets.html" class="footer__link">Markets</a>
+            <a href="dashboard.html" class="footer__link">Dashboard <span class="footer__link-badge">Pro</span></a>
+            <a href="pricing.html" class="footer__link">Pricing</a>
+            <a href="#" class="footer__link">Trading API</a>
+            <a href="#" class="footer__link">Mobile App</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer__col-title">Learn</h4>
+          <div class="footer__links">
+            <a href="academy.html" class="footer__link">Academy</a>
+            <a href="#" class="footer__link">Market Analysis</a>
+            <a href="#" class="footer__link">Trading Guide</a>
+            <a href="#" class="footer__link">Video Tutorials</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer__col-title">Company</h4>
+          <div class="footer__links">
+            <a href="about.html" class="footer__link">About Us</a>
+            <a href="#" class="footer__link">Careers</a>
+            <a href="#" class="footer__link">Press</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer__col-title">Legal</h4>
+          <div class="footer__links">
+            <a href="#" class="footer__link">Terms of Service</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+            <a href="#" class="footer__link">Cookie Policy</a>
+            <a href="#" class="footer__link">Risk Warning</a>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="footer__bottom">
+        <div class="footer__copy">
+          &copy; 2026 <span>Archon</span> Trading Platform. All rights reserved. Built with semantic HTML5 & CSS3.
+        </div>
+        <div class="footer__compliance">
+          <div class="footer__compliance-badge"><i class="fa-solid fa-check"></i> SOC2 Type II</div>
+          <div class="footer__compliance-badge"><i class="fa-solid fa-shield"></i> ISO 27001</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

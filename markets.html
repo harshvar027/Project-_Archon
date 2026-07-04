@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markets | Archon Trading Platform</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/markets.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <input type="checkbox" id="nav-toggle" class="sr-only">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <div class="nav__logo-icon">A</div>
+        <div class="nav__logo-text">Archon</div>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="markets.html" class="nav__link active">Markets</a>
+        <a href="dashboard.html" class="nav__link">Dashboard</a>
+        <a href="pricing.html" class="nav__link">Pricing</a>
+        <a href="academy.html" class="nav__link">Academy</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn-ghost hide-mobile">Log In</a>
+        <a href="register.html" class="btn btn-primary hide-mobile">Sign Up</a>
+        <label for="nav-toggle" class="nav__hamburger">
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+        </label>
+      </div>
+    </div>
+    <!-- Mobile Menu (simplified for brevity) -->
+    <div class="nav__mobile-menu">
+      <a href="index.html" class="nav__mobile-link">Home</a>
+      <a href="markets.html" class="nav__mobile-link active">Markets</a>
+      <a href="dashboard.html" class="nav__mobile-link">Dashboard</a>
+      <a href="pricing.html" class="nav__mobile-link">Pricing</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Banner -->
+    <section class="markets-hero">
+      <div class="container markets-hero__inner">
+        <div>
+          <div class="markets-hero__label">Market Overview</div>
+          <h1 class="markets-hero__title">Explore Global Markets</h1>
+          <p class="markets-hero__sub">Track prices, analyze trends, and trade over 350+ assets across Crypto, Forex, Stocks, and Commodities.</p>
+        </div>
+        <div class="market-summary">
+          <div class="market-summary__card">
+            <div class="market-summary__val text-primary">+1.24%</div>
+            <div class="market-summary__key">24h Market</div>
+          </div>
+          <div class="market-summary__card">
+            <div class="market-summary__val">$45.2B</div>
+            <div class="market-summary__key">24h Vol</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <!-- Toolbar -->
+      <div class="markets-toolbar">
+        <div class="markets-search">
+          <i class="fa-solid fa-magnifying-glass markets-search__icon"></i>
+          <input type="text" class="markets-search__input" placeholder="Search assets, e.g., BTC, EUR, Apple...">
+        </div>
+        <div class="markets-filters">
+          <button class="btn btn-ghost btn-sm">24h Change <i class="fa-solid fa-sort"></i></button>
+          <button class="btn btn-ghost btn-sm">Volume <i class="fa-solid fa-sort"></i></button>
+        </div>
+      </div>
+
+      <!-- Categories -->
+      <div class="category-tabs">
+        <div class="category-tab active"><i class="fa-solid fa-layer-group"></i> All Markets</div>
+        <div class="category-tab"><i class="fa-brands fa-bitcoin"></i> Crypto</div>
+        <div class="category-tab"><i class="fa-solid fa-money-bill-trend-up"></i> Forex</div>
+        <div class="category-tab"><i class="fa-solid fa-chart-simple"></i> Stocks</div>
+        <div class="category-tab"><i class="fa-solid fa-gem"></i> Commodities</div>
+      </div>
+
+      <!-- Crypto Section -->
+      <div class="market-section">
+        <h2 class="market-section__title">
+          <div class="market-section__icon icon-frame icon-frame-primary"><i class="fa-brands fa-bitcoin"></i></div>
+          Cryptocurrency
+          <span class="market-section__count">120 Assets</span>
+        </h2>
+        
+        <div class="market-grid">
+          <!-- Card 1 -->
+          <div class="market-card">
+            <div class="market-card__head">
+              <div class="market-card__asset">
+                <div class="market-card__icon icon-btc"><i class="fa-brands fa-bitcoin"></i></div>
+                <div>
+                  <div class="market-card__name">Bitcoin</div>
+                  <div class="market-card__ticker">BTC</div>
+                </div>
+              </div>
+              <div class="market-card__spark">
+                <div class="spark-bar up" style="height:40%"></div><div class="spark-bar up" style="height:60%"></div><div class="spark-bar up" style="height:50%"></div><div class="spark-bar up" style="height:80%"></div><div class="spark-bar up" style="height:100%"></div>
+              </div>
+            </div>
+            <div class="market-card__body">
+              <div>
+                <div class="market-card__field-label">Price</div>
+                <div class="market-card__field-val">$64,230.50</div>
+              </div>
+              <div>
+                <div class="market-card__field-label">24h Change</div>
+                <div class="market-card__field-val text-primary">+2.45%</div>
+              </div>
+            </div>
+            <div class="market-card__actions">
+              <button class="btn btn-outline btn-sm btn-full">Trade</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="market-card">
+            <div class="market-card__head">
+              <div class="market-card__asset">
+                <div class="market-card__icon icon-eth"><i class="fa-brands fa-ethereum"></i></div>
+                <div>
+                  <div class="market-card__name">Ethereum</div>
+                  <div class="market-card__ticker">ETH</div>
+                </div>
+              </div>
+              <div class="market-card__spark">
+                <div class="spark-bar up" style="height:30%"></div><div class="spark-bar up" style="height:40%"></div><div class="spark-bar up" style="height:35%"></div><div class="spark-bar up" style="height:70%"></div><div class="spark-bar up" style="height:90%"></div>
+              </div>
+            </div>
+            <div class="market-card__body">
+              <div>
+                <div class="market-card__field-label">Price</div>
+                <div class="market-card__field-val">$3,450.20</div>
+              </div>
+              <div>
+                <div class="market-card__field-label">24h Change</div>
+                <div class="market-card__field-val text-primary">+1.82%</div>
+              </div>
+            </div>
+            <div class="market-card__actions">
+              <button class="btn btn-outline btn-sm btn-full">Trade</button>
+            </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="market-card">
+            <div class="market-card__head">
+              <div class="market-card__asset">
+                <div class="market-card__icon icon-sol">S</div>
+                <div>
+                  <div class="market-card__name">Solana</div>
+                  <div class="market-card__ticker">SOL</div>
+                </div>
+              </div>
+              <div class="market-card__spark">
+                <div class="spark-bar down" style="height:90%"></div><div class="spark-bar down" style="height:70%"></div><div class="spark-bar down" style="height:50%"></div><div class="spark-bar down" style="height:60%"></div><div class="spark-bar down" style="height:30%"></div>
+              </div>
+            </div>
+            <div class="market-card__body">
+              <div>
+                <div class="market-card__field-label">Price</div>
+                <div class="market-card__field-val">$142.75</div>
+              </div>
+              <div>
+                <div class="market-card__field-label">24h Change</div>
+                <div class="market-card__field-val text-danger">-0.54%</div>
+              </div>
+            </div>
+            <div class="market-card__actions">
+              <button class="btn btn-outline btn-sm btn-full">Trade</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forex Section -->
+      <div class="market-section">
+        <h2 class="market-section__title">
+          <div class="market-section__icon icon-frame icon-frame-secondary"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+          Forex
+          <span class="market-section__count">45 Pairs</span>
+        </h2>
+        
+        <div class="market-table-wrap">
+          <table class="market-table">
+            <thead>
+              <tr>
+                <th>Asset</th>
+                <th>Price</th>
+                <th>24h Change</th>
+                <th>24h Volume</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="coin-cell">
+                    <div class="market-card__icon icon-eurusd" style="width:24px;height:24px;font-size:10px;">EU</div>
+                    <div class="fw-semibold">EUR/USD</div>
+                  </div>
+                </td>
+                <td class="price-cell">1.0845</td>
+                <td class="text-primary fw-semibold">+0.12%</td>
+                <td>$12.5B</td>
+                <td><button class="btn btn-ghost btn-sm">Trade</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="coin-cell">
+                    <div class="market-card__icon icon-gbpusd" style="width:24px;height:24px;font-size:10px;">GU</div>
+                    <div class="fw-semibold">GBP/USD</div>
+                  </div>
+                </td>
+                <td class="price-cell">1.2630</td>
+                <td class="text-danger fw-semibold">-0.05%</td>
+                <td>$8.2B</td>
+                <td><button class="btn btn-ghost btn-sm">Trade</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer" style="padding-top: var(--space-8);">
+    <div class="container text-center text-muted text-sm pb-8">
+      &copy; 2026 Archon Trading. Minimal Footer for internal pages.
+    </div>
+  </footer>
+
+</body>
+</html>
